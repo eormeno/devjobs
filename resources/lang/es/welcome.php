@@ -1,7 +1,7 @@
 <?php
 
 return [
-	'dashboard' => 'Tablero',
+	'dashboard' => 'Mis Vacantes',
 	'login' => 'Iniciar sesión',
 	'register' => 'Registrarse',
 	'vision' => 'Visión',
