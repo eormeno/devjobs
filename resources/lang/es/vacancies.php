@@ -11,6 +11,7 @@ return [
 	'form_title' => 'Título de la vacante',
 	'form_title_placeholder' => 'Título de la vacante',
 	'form_salary' => 'Salario mensual',
+	'form_salary_placeholder' => '-- Seleccione --',
 	'form_category' => 'Categoría',
 	'form_company' => 'Empresa',
 	'form_company_placeholder' => 'Nombre de la empresa',
