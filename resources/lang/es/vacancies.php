@@ -22,4 +22,8 @@ return [
 	'form_image' => 'Imagen',
 	'form_submit' => 'Publicar Vacante',
 	'form_success' => 'Vacante creada con éxito descomunal.',
+	'list_candidates_button' => 'Candidatos',
+	'list_edit_button' => 'Editar',
+	'list_delete_button' => 'Eliminar',
+	'list_empty' => 'No hay vacantes creadas.',
 ];

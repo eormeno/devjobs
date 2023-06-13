@@ -11,6 +11,10 @@ class Vacant extends Model
 
     protected $table = 'vacancies';
 
+    protected $casts = [
+        'apply_deadline' => 'datetime',
+    ];
+
     protected $fillable = [
         'title',
         'salary_id',
