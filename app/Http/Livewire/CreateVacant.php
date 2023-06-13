@@ -47,9 +47,9 @@ class CreateVacant extends Component
 			'user_id' => auth()->user()->id,
 		]);
 
-		session()->flash('message', 'Vacante creada con éxito.');
+		session()->flash('message', __('vacancies.form_success'));
 
-		return redirect()->route('vacants.index');
+		return redirect()->route('vacancies.index');
 	}
 
 	public function render()

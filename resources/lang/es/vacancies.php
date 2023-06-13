@@ -21,4 +21,5 @@ return [
 	'form_job_description_placeholder' => 'Descripción del trabajo',
 	'form_image' => 'Imagen',
 	'form_submit' => 'Publicar Vacante',
+	'form_success' => 'Vacante creada con éxito descomunal.',
 ];
