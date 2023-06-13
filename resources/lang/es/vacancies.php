@@ -13,6 +13,7 @@ return [
 	'form_salary' => 'Salario mensual',
 	'form_salary_placeholder' => '-- Seleccione --',
 	'form_category' => 'Categoría',
+	'form_category_placeholder' => '-- Seleccione --',
 	'form_company' => 'Empresa',
 	'form_company_placeholder' => 'Nombre de la empresa',
 	'form_apply_deadline' => 'Fecha límite de aplicación',
