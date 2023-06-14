@@ -9,7 +9,9 @@ class ListVacancies extends Component
 {
     public function render()
     {
-        $vacancies = Vacant::where('user_id', auth()->user()->id)->paginate(1);
+        $perPage = (int) env('PAGINATION_PER_PAGE', 10);
+
+        $vacancies = Vacant::where('user_id', auth()->user()->id)->paginate($perPage);
         return view('livewire.list-vacancies', [
             'vacancies' => $vacancies,
         ]);

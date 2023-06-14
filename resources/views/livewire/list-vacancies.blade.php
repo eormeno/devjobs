@@ -17,7 +17,7 @@
                     class="bg-slate-800 py-2 px-4 rounded-md text-white text-sm font-bold uppercase text-center">
                     {{ __('vacancies.list_candidates_button') }}
                 </a>
-                <a href="#"
+                <a href="{{ route('vacancies.edit', $vacant) }}"
                     class="bg-blue-800 py-2 px-4 rounded-md text-white text-sm font-bold uppercase text-center">
                     {{ __('vacancies.list_edit_button') }}
                 </a>
