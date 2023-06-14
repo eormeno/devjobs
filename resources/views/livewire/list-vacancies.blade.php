@@ -33,3 +33,7 @@
         </p>
     @endforelse
 </div>
+
+<div class="mt-5">
+    {{ $vacancies->links() }}
+</div>
