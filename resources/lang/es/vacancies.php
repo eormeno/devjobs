@@ -30,4 +30,12 @@ return [
 	'list_edit_button' => 'Editar',
 	'list_delete_button' => 'Eliminar',
 	'list_empty' => 'No hay vacantes creadas.',
+	'policy_edit_denied' => 'No tienes permiso para editar esta vacante.',
+	'remove_success' => 'Vacante eliminada.',
+	'list_delete_dialog_title' => '¿Deseas eliminar la Vacante?',
+	'list_delete_dialog_text' => 'No podrás revertir esta acción!',
+	'list_delete_dialog_cancel' => 'Cancelar',
+	'list_delete_dialog_confirm' => 'Si, elimínala!',
+	'list_delete_dialog_success' => 'Vacante eliminada.',
+	'list_delete_dialog_success_text' => 'La Vacante fue eliminada.',
 ];
