@@ -60,5 +60,5 @@ class CreateVacant extends Component
 		]);
 	}
 
-	private static string $storePath = 'public/images/vacants';
+	public static string $storePath = 'public/images/vacants';
 }

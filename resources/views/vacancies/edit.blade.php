@@ -12,7 +12,9 @@
                     <h1 class="text-2xl font-bold text-center mb-5">
                         {{ __('vacancies.form_edit_title', ['title' => $vacant->title]) }}</h1>
                     <div class="md:flex md:justify-center p-5">
+
                         <livewire:edit-vacant :vacant="$vacant" />
+                        
                     </div>
                 </div>
             </div>
