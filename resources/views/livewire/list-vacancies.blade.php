@@ -3,7 +3,7 @@
         @forelse ($vacancies as $vacant)
             <div class="p-6 bg-white border-b border-gray-200 md:flex md:justify-between md:items-center">
                 <div class="space-y-3">
-                    <a href="#" class="text-xl font-bold">
+                    <a href="{{ route('vacancies.show', $vacant->id) }}" class="text-xl font-bold">
                         {{ $vacant->title }}
                     </a>
                     <p class="text-sm text-gray-600 font-bold">
@@ -55,7 +55,7 @@
                 cancelButtonText: "{{ __('vacancies.list_delete_dialog_cancel') }}",
             }).then((result) => {
                 if (result.isConfirmed) {
-						  Livewire.emit('deleteVacant', id)
+                    Livewire.emit('deleteVacant', id)
                     Swal.fire(
                         "{{ __('vacancies.list_delete_dialog_success') }}",
                         "{{ __('vacancies.list_delete_dialog_success_text') }}",
