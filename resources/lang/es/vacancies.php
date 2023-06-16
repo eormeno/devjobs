@@ -38,4 +38,7 @@ return [
 	'list_delete_dialog_confirm' => 'Si, elimínala!',
 	'list_delete_dialog_success' => 'Vacante eliminada.',
 	'list_delete_dialog_success_text' => 'La Vacante fue eliminada.',
+	'show_job_description_title' => 'Descripción del trabajo',
+	'show_how_to_apply_title' => 'Si estás interesado en esta vacante, ',
+	'show_how_to_apply_text' => 'ingresa o crea tu cuenta y postúlate.',
 ];
