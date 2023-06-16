@@ -18,6 +18,13 @@ class VacantPolicy
 			: Response::deny(__('vacancies.policy_view_any_denied'));
 	}
 
+	public function applyToVacant(User $user, Vacant $vacant)
+	{
+		return $user->role === 1
+			? Response::allow()
+			: Response::deny(__('vacancies.policy_apply_to_vacant_denied'));
+	}
+
 	/**
 	 * Determine whether the user can view the model.
 	 */

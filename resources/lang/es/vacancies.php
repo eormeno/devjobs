@@ -44,4 +44,8 @@ return [
 	'policy_edit_denied' => 'No tienes permiso para editar esta vacante.',
 	'policy_view_any_denied' => 'No tienes permiso para ver las vacantes.',
 	'policy_create_denied' => 'No tienes permiso para crear vacantes.',
+
+	'apply_to_vacant_title' => 'Postularme a la vacante',
+	'apply_to_vacant_cv_file' => 'Currículum (PDF)',
+	'apply_to_vacant_button' => 'Postularme',
 ];
