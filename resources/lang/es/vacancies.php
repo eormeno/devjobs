@@ -30,7 +30,6 @@ return [
 	'list_edit_button' => 'Editar',
 	'list_delete_button' => 'Eliminar',
 	'list_empty' => 'No hay vacantes creadas.',
-	'policy_edit_denied' => 'No tienes permiso para editar esta vacante.',
 	'remove_success' => 'Vacante eliminada.',
 	'list_delete_dialog_title' => '¿Deseas eliminar la Vacante?',
 	'list_delete_dialog_text' => 'No podrás revertir esta acción!',
@@ -39,6 +38,10 @@ return [
 	'list_delete_dialog_success' => 'Vacante eliminada.',
 	'list_delete_dialog_success_text' => 'La Vacante fue eliminada.',
 	'show_job_description_title' => 'Descripción del trabajo',
-	'show_how_to_apply_title' => 'Si estás interesado en esta vacante, ',
+	'show_how_to_apply_title' => 'Si te interesa esta vacante, ',
 	'show_how_to_apply_text' => 'ingresa o crea tu cuenta y postúlate.',
+	
+	'policy_edit_denied' => 'No tienes permiso para editar esta vacante.',
+	'policy_view_any_denied' => 'No tienes permiso para ver las vacantes.',
+	'policy_create_denied' => 'No tienes permiso para crear vacantes.',
 ];

@@ -13,6 +13,9 @@ class VacantPolicy
 	 */
 	public function viewAny(User $user)
 	{
+		return $user->role === 2
+			? Response::allow()
+			: Response::deny(__('vacancies.policy_view_any_denied'));
 	}
 
 	/**
@@ -27,6 +30,9 @@ class VacantPolicy
 	 */
 	public function create(User $user)
 	{
+		return $user->role === 2
+			? Response::allow()
+			: Response::deny(__('vacancies.policy_create_denied'));
 	}
 
 	/**

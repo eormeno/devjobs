@@ -36,10 +36,14 @@
         </div>
     </div>
 
-    <div class="mt-5 bg-gray-50 border border-dashed p-5 text-center">
-        <p>
-            {{ __('vacancies.show_how_to_apply_title') }}
-            <a href="" class="font-bold text-indigo-600">{{ __('vacancies.show_how_to_apply_text') }}</a>
-        </p>
-    </div>
+    @guest
+        <div class="mt-5 bg-gray-50 border border-dashed p-5 text-center">
+            <p>
+                {{ __('vacancies.show_how_to_apply_title') }}
+                <a href="{{ route('register') }}"
+                    class="font-bold text-indigo-600">{{ __('vacancies.show_how_to_apply_text') }}</a>
+            </p>
+        </div>
+    @endguest
+
 </div>
