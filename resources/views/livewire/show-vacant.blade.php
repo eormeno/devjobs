@@ -47,7 +47,7 @@
     @endguest
 
     @can('applyToVacant', $vacant)
-        <livewire:apply-vacant />
+        <livewire:apply-vacant :vacant="$vacant" />
     @endcan
 
 </div>

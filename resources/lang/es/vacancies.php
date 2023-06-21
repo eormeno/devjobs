@@ -48,4 +48,5 @@ return [
 	'apply_to_vacant_title' => 'Postularme a la vacante',
 	'apply_to_vacant_cv_file' => 'Currículum (PDF)',
 	'apply_to_vacant_button' => 'Postularme',
+	'apply_to_vacant_success' => 'Te has postulado exitosamente.',
 ];
