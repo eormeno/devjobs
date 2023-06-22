@@ -1,8 +1,9 @@
 <?php
 
-use App\Http\Controllers\ProfileController;
-use App\Http\Controllers\VacantController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\VacantController;
+use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\NotificationController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,6 +24,7 @@ Route::get('dashboard', [VacantController::class, 'index'])->middleware(['auth',
 Route::get('vacancies/create', [VacantController::class, 'create'])->middleware(['auth', 'verified'])->name('vacancies.create');
 Route::get('vacancies/{vacant}/edit', [VacantController::class, 'edit'])->middleware(['auth', 'verified'])->name('vacancies.edit');
 Route::get('vacancies/{vacant}', [VacantController::class, 'show'])->name('vacancies.show');
+Route::get('notifications', NotificationController::class)->name('notifications');
 
 
 Route::middleware('auth')->group(function () {

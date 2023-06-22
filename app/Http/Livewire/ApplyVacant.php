@@ -4,11 +4,12 @@ namespace App\Http\Livewire;
 
 use Livewire\Component;
 use Livewire\WithFileUploads;
+use App\Notifications\NewCandidate;
 
 class ApplyVacant extends Component
 {
 	use WithFileUploads;
-	
+
 	public $cv;
 	public $vacant;
 
@@ -30,6 +31,13 @@ class ApplyVacant extends Component
 			'user_id' => auth()->user()->id,
 			'cv' => $data['cv']
 		]);
+
+		$this->vacant->recruiter->notify(new NewCandidate([
+			'vacant_id' => $this->vacant->id,
+			'user_id' => auth()->user()->id,
+			'title' => $this->vacant->title
+		]));
+
 		session()->flash('success', __('vacancies.apply_to_vacant_success'));
 		return redirect()->back();
 	}

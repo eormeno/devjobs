@@ -44,4 +44,9 @@ class Vacant extends Model
     {
         return $this->hasMany(Candidate::class);
     }
+
+    public function recruiter()
+    {
+        return $this->belongsTo(User::class, 'user_id');
+    }
 }
