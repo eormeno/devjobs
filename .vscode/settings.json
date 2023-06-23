@@ -1,0 +1,10 @@
+{
+	"editor.rulers": [
+		100
+	],
+	"editor.wordWrap": "on",
+	"editor.wordWrapColumn": 100,
+	"workbench.colorCustomizations": {
+		"editorRuler.foreground": "#353b7a89"
+	}
+}
