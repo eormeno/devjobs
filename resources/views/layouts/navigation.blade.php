@@ -106,10 +106,15 @@
                     {{ __('vacancies.create_title') }}
                 </x-responsive-nav-link>
                 @if (auth()->user()->role == 2)
-                    <a href="{{ route('notifications') }}"
-                        class="mr-2 w-7 h-7 bg-indigo-600 hover:bg-indigo-800 rounded-full flex flex-col justify-center items-center text-sm font-extrabold text-white">
-                        {{ auth()->user()->unreadNotifications->count() }}
-                    </a>
+                    <div class="flex gap-2 items-center p-3">
+                        <a href="{{ route('notifications') }}"
+                            class="w-7 h-7 bg-indigo-600 hover:bg-indigo-800 rounded-full flex flex-col justify-center items-center text-sm font-extrabold text-white">
+                            {{ auth()->user()->unreadNotifications->count() }}
+                        </a>
+                        <p class="text-base font-medium text-gray-600">
+                            {{ trans_choice('notifications.notifications_count',auth()->user()->unreadNotifications->count()) }}
+                        </p>
+                    </div>
                 @endif
             </div>
 
