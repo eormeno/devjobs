@@ -4,6 +4,7 @@ return [
 	'dashboard' => 'Mis Vacantes',
 	'login' => 'Iniciar sesión',
 	'register' => 'Registrarse',
+	'logout' => 'Cerrar sesión',
 	'vision' => 'Visión',
 	'mission' => 'Misión',
 	'values' => 'Valores',
