@@ -1,4 +1,7 @@
 <div>
+    
+    <livewire:vacancies-filter />
+
     <div class="py-12">
         <div class="max-w-7xl mx-auto">
             <h3 class="font-extrabold text-4xl text-gray-900 mb-12">{{ __('home.vacancies_title') }}</h3>
