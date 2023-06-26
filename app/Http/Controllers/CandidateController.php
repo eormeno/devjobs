@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Vacant;
 use App\Models\Candidate;
 use Illuminate\Http\Request;
 
@@ -10,9 +11,10 @@ class CandidateController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(Vacant $vacant)
     {
-        //
+        $candidates = $vacant->candidates;
+        return view('candidates.index', compact('candidates', 'vacant'));
     }
 
     /**
