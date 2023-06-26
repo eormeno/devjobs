@@ -4,22 +4,10 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\VacantController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\CandidateController;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\NotificationController;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "web" middleware group. Make something great!
-|
-*/
-
-Route::get('/', function () {
-	return view('welcome');
-})->name('home');
+Route::get('/', HomeController::class)->name('home');
 
 Route::get('dashboard', [VacantController::class, 'index'])->middleware(['auth', 'verified', 'recruiter'])->name('vacancies.index');
 Route::get('vacancies/create', [VacantController::class, 'create'])->middleware(['auth', 'verified'])->name('vacancies.create');
