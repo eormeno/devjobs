@@ -27,7 +27,7 @@ class CreateVacant extends Component
 		'company' => 'required',
 		'apply_deadline' => 'required',
 		'job_description' => 'required',
-		'image' => 'required|image|max:1024',
+		'image' => 'required|image',
 	];
 
 	public function createVacant()

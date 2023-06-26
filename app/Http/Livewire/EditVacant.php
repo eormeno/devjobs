@@ -30,7 +30,7 @@ class EditVacant extends Component
 		'company' => 'required',
 		'apply_deadline' => 'required',
 		'job_description' => 'required',
-		'new_image' => 'nullable|image|max:1024',
+		'new_image' => 'nullable|image',
 	];
 
 	public function mount(Vacant $vacant)
