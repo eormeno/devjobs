@@ -12,8 +12,7 @@ class NotificationController extends Controller
 	public function __invoke(Request $request)
 	{
 		$unreadNotifications = $request->user()->unreadNotifications;
-
-		//$unreadNotifications->markAsRead();
+		$unreadNotifications->markAsRead();
 
 		return view('notifications.index', [
 			'unreadNotifications' => $unreadNotifications,
